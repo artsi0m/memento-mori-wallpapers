@@ -1,0 +1,22 @@
+** Memento mori
+
+Bash script that utilizes thelifecalendar.com API to create gnome
+wallpapers with current percentage of life spent.
+
+*** Demonstration
+
+[[https://youtu.be/4q5emB5NFbc][Demo on YouTube]]
+
+*** Dependencies:
+- https://thelifecalendar.com
+- wget (to fetch wallpaper)
+- imagemagick (to invert wallpaper colors, creating light themed wallpaper)
+- systemd user services (for periodic running a la crontab)
+- gsettings (to set two variants of wallpaper in GNOME)
+
+*** Installation
+1. Edit variables at the top of life-png.sh
+2. Place this script into ~/bin of your home folder
+3. =cp life-png.{service,timer} ~/.config/systemd/user/=
+4. =systemctl --user daemon-reload=
+5. =systemctl --user enable life-png.timer=
