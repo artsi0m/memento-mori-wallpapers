@@ -1,0 +1,8 @@
+[Unit]
+Description=Set life.png wallpaper
+RefuseManualStart=no
+RefuseManualStop=yes
+ 
+[Service]
+Type=oneshot
+ExecStart=/home/artsi0m/bin/life-png.sh

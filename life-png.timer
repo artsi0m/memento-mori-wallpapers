@@ -1,0 +1,12 @@
+[Unit]
+Description=Change wallpaper daily
+RefuseManualStart=no
+RefureManualStop=no
+
+[Timer]
+Persitent=False
+OnCalendar=*-*-* 19:15:00
+Unit=life-png.service
+
+[Install]
+WantedBy=graphical.target
