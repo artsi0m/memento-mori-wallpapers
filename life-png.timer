@@ -1,10 +1,10 @@
 [Unit]
 Description=Change wallpaper daily
 RefuseManualStart=no
-RefureManualStop=no
+RefuseManualStop=no
 
 [Timer]
-Persitent=False
+Persistent=False
 OnCalendar=*-*-* 19:15:00
 Unit=life-png.service
 
